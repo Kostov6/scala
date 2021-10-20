@@ -3,6 +3,4 @@ structure:
 {{- range $i, $version := $vers }}
 - name: {{$version}}
   source: https://github.com/Kostov6/scala/blob/{{$version}}/README.md
-- name: newer
-  source: https://github.com/Kostov6/scala/blob/{{$version}}/README.md
 {{- end }}
