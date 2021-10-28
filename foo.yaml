@@ -1,5 +1,5 @@
 {{- $vers := Split .versions "," -}}
-{{- range $i, $version := $vers -}}
+{{- range $i, $version := $vers }}
 structure:
 - name: {{$version}}
   source: https://github.com/Kostov6/scala/blob/{{$version}}/README.md
