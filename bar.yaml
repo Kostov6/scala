@@ -1,0 +1,9 @@
+
+structure:
+{{- $vers := Split .versions "," -}}
+{{- range $i, $version := $vers }}
+- name: {{$version}}
+  source: https://github.com/Kostov6/scala/blob/{{$version}}/README.md
+{{- end }}
+- name: newer
+  source: https://github.com/Kostov6/scala/blob/2.13.x/README.md
